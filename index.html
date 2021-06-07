@@ -5,10 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width?device-width", initial-scale=1.0>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
     <title>Document</title>
 </head>
 <body>
+<script src="scripts/script.js">var compus = 0;
+var descuento = 0;
+var tota = 0;
+var costo = 820000;
+var presio = 0;
+var porcentaje = 0;
+
+function calcular () {
+
+
+  compus=document.getElementById("numero").value;
+  presio = compus*costo;
+ 
+  
+  if (presio<1640000){
+     descuento=0;
+     porcentaje=0}
+  else if (presio<3280000){
+     descuento=presio*0.15;
+     porcentaje=15}
+  else if (presio<6560000){
+    descuento=presio*0.25;
+    porcentaje = 25}
+  else if (presio<9840000){
+    descuento=presio*0.35;
+    porcentaje=35}
+  else{
+    descuento=0;
+    porcentaje=0;
+  }
+
+tota=presio-descuento;
+document.getElementById("valorcompra").value="$"+presio;
+document.getElementById("valordescuent").value="$"+descuento;
+document.getElementById("total").value="$"+tota;
+document.getElementById("salida").innerHTML="Su descuente fue de " +porcentaje+"%";
+}  </script>
     <header>
         <h1 class="alver">almacén de compuntadores</h1>
     </header>
