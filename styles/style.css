@@ -1,0 +1,58 @@
+.alhor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.alver{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.line{
+    border:5px solid aquamarine;
+}
+.contenedor1{
+    padding: 60px 60px 30px 60px;
+    margin: 30px 30px 30px 30px;    
+    width:35%;
+    align:center;
+}
+.contenedor2{
+    padding: 30px 120px 120px 120px;
+    width:35%;
+    align:center;
+}
+.contenedor3{
+    padding: 5px 80px 5px 80px;
+    
+ 
+    /*width:20%;*/
+    align:center;
+}
+.renglon{
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+label{
+  font-size:18px;
+}
+.boton{
+  color:white;
+  background-color:red;
+  padding: 10px;
+}
+#salida{
+  color:red;
+}
+#numero{
+  color:black;
+}
+#valorcompra{color:black;}
+#valordescuent{color:black;}
+#total{
+    color:black;
+}
