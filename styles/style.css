@@ -13,7 +13,7 @@
     align-items: center;
 }
 .line{
-    border:5px solid aquamarine;
+    border:5px solid orangered;
 }
 .contenedor1{
     padding: 60px 60px 30px 60px;
@@ -55,4 +55,23 @@ label{
 #valordescuent{color:black;}
 #total{
     color:black;
+}
+.enlace{
+  color:black;
+}
+.enlace:hover{
+  color: red;
+}
+.tipo{
+  font-family:monospace;
+}
+.marco{
+  margin: 5px 5px 5px 5px;
+  border: 5px solid orangered;
+}
+.linea{
+  border: 5px solid orangered;
+}
+.linea:hover{
+  border: 5px solid aquamarine;
 }

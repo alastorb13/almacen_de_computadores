@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width?device-width", initial-scale=1.0>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+<script src="scripts/script.js">var compus = 0;
+var descuento = 0;
+var tota = 0;
+var costo = 820000;
+var presio = 0;
+var porcentaje = 0;
+
+function calcular () {
+
+
+  compus=document.getElementById("numero").value;
+  presio = compus*costo;
+ 
+  
+  if (presio<1640000){
+     descuento=0;
+     porcentaje=0}
+  else if (presio<3280000){
+     descuento=presio*0.15;
+     porcentaje=15}
+  else if (presio<6560000){
+    descuento=presio*0.25;
+    porcentaje = 25}
+  else if (presio<9840000){
+    descuento=presio*0.35;
+    porcentaje=35}
+  else{
+    descuento=0;
+    porcentaje=0;
+  }
+
+tota=presio-descuento;
+document.getElementById("valorcompra").value="$"+presio;
+document.getElementById("valordescuent").value="$"+descuento;
+document.getElementById("total").value="$"+tota;
+document.getElementById("salida").innerHTML="Su descuente fue de " +porcentaje+"%";
+}  </script>
+    <div class = "alver">
+    <div>
+        <img src="logo.png">
+    </div>
+    <div>
+        <h1 class="alver">almacén de compuntadores</h1>
+    </div>
+    <div class="alhor">
+        <a href="index.html" class="contenedor3 enlace"><p>Inicio</p></a>
+        <a href="shop.html" class="contenedor3 enlace"><p>Tienda</p></a>
+    </div>
+    </div>
+    <main>
+        <div class ="alver">
+            <div class = "alver line contenedor1">
+              <div class="alhor">
+                <div class="renglon"><label>cantidad de computadores comprados</label></div>
+                <div><input type=text id="numero"></div>
+              </div> 
+                
+                <div><button type="submit" class="boton" onclick="calcular()">Calcular</button></div>
+            </div>
+
+            <div class = "alver line contenedor2">
+                <div><h2>Orden de compra</h2></div>
+                <div class= "contenedor3"><label>Valor de compra:</label></div>
+                <div><input type="text" readonly id="valorcompra"></div>
+                <div class= "contenedor3"><label>Valor de descuento:</label></div>
+                <div><input type="text"readonly id="valordescuent"></div>
+                <div class= "contenedor3"><label>Total:</label></div>
+                <div><input type="text"readonly id="total"></div>
+                <div class= "contenedor3"><label id="salida"></label></div>
+
+            </div>
+        </div>
+    </main>
+    </body>
+</html>

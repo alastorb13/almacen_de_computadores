@@ -8,69 +8,45 @@
     <title>Document</title>
 </head>
 <body>
-<script src="scripts/script.js">var compus = 0;
-var descuento = 0;
-var tota = 0;
-var costo = 820000;
-var presio = 0;
-var porcentaje = 0;
-
-function calcular () {
-
-
-  compus=document.getElementById("numero").value;
-  presio = compus*costo;
- 
-  
-  if (presio<1640000){
-     descuento=0;
-     porcentaje=0}
-  else if (presio<3280000){
-     descuento=presio*0.15;
-     porcentaje=15}
-  else if (presio<6560000){
-    descuento=presio*0.25;
-    porcentaje = 25}
-  else if (presio<9840000){
-    descuento=presio*0.35;
-    porcentaje=35}
-  else{
-    descuento=0;
-    porcentaje=0;
-  }
-
-tota=presio-descuento;
-document.getElementById("valorcompra").value="$"+presio;
-document.getElementById("valordescuent").value="$"+descuento;
-document.getElementById("total").value="$"+tota;
-document.getElementById("salida").innerHTML="Su descuente fue de " +porcentaje+"%";
-}  </script>
-    <header>
-        <h1 class="alver">almacén de compuntadores</h1>
-    </header>
-    <main>
-        <div class ="alver">
-            <div class = "alver line contenedor1">
-              <div class="alhor">
-                <div class="renglon"><label>cantidad de computadores comprados</label></div>
-                <div><input type=text id="numero"></div>
-              </div> 
-                
-                <div><button type="submit" class="boton" onclick="calcular()">Calcular</button></div>
-            </div>
-
-            <div class = "alver line contenedor2">
-                <div><h2>Orden de compra</h2></div>
-                <div class= "contenedor3"><label>Valor de compra:</label></div>
-                <div><input type="text" readonly id="valorcompra"></div>
-                <div class= "contenedor3"><label>Valor de descuento:</label></div>
-                <div><input type="text"readonly id="valordescuent"></div>
-                <div class= "contenedor3"><label>Total:</label></div>
-                <div><input type="text"readonly id="total"></div>
-                <div class= "contenedor3"><label id="salida"></label></div>
-
-            </div>
+    <div class = "alver">
+        <div>
+            <img src="logo.png">
         </div>
-    </main>
-    </body>
-</html>
+        <div>
+            <h1>almacén de compuntadores</h1>
+        </div>
+        <div class="alhor">
+            <a href="index.html" class="contenedor3 enlace"><p>Inicio</p></a>
+            <a href="shop.html" class="contenedor3 enlace"><p>Tienda</p></a>
+        </div>
+        <div class="alver tipo">
+            <div><h2> Computadoras a elección para todos los bolsillos</h2></div>
+            <div><h3> Siempre y cuando sean pequeños</h3></div>
+        </div>
+        <hr>
+        <div class="alver">
+            <a href=shop.html><div class="alhor">
+                <div>
+                    <img src="1.png" class="marco linea">
+                </div>
+                <div>
+                    <img src="2.png" class="marco linea">
+                </div>
+                <div>
+                    <img src="3.png" class="marco linea">
+                </div>
+            </div>
+            <div class ="alhor">
+                <div>
+                    <img src="4.png" class="marco linea">
+                </div>
+                <div>
+                    <img src="5.png" class="marco linea">
+                </div>
+                <div>
+                    <img src="6.png" class="marco linea">
+                </div>
+            </div></a>
+        </div>
+        
+    </div>
